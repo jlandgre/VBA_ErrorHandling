@@ -2,7 +2,7 @@ This shares and serves as documentation for our VBA user messaging and error tra
 
 We developed (and hereby openly share) a VBA **ErrorHandling** Class and code structure for user messaging in Microsoft Excel/VBA applications. For us, this replaced a messy practice of sprinkling MsgBox statements and rambling, hard-to-find text strings throughout code. The Class' design lets our applications "fail gracefully" when problems occur. Our projects simply need to instance **ErrorHandling** as a global object in driver subsroutines. It then unobtrusively co-exists with whatever our simulation or data analysis application is doing and is there to share messages with our users when needed.
 
-**Background**
+**Background**</br>
 We develop in Python too, but Microsoft Excel/VBA development allows consulting clients to personally interact with applications using the Microsoft Office installed base in their companies. For non-coding users and often even ourselves, we also value Excel as a user-facing front end --valuing its outstanding multi-tabbed and richly formatted user interface.
 
 Given VBA's long history, error tracing code has certainly been developed by VBA experts over the years. However, given the often closed nature of consulting and in-house development work, we have never encountered open-source examples. Ours is easy to implement and meets our goal of allowing applications we develop to behave like a considerate human --providing users with useful guidance and advising them of problematic conditions and how to resolve them. By posting openly, we hope that additional improvement tips will surface and allow us to continue to improve.
